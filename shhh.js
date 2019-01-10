@@ -36,7 +36,7 @@ function hmm()
 	var song = document.createElement("AUDIO");
 	song.setAttribute("src","shhh.mp3");
 	song.setAttribute("id","konamSong");
-	document.body.appendChild(song);​
+	document.head.appendChild(song);
 	
 	var nSong = document.getElementById("konamSong");
 	nSong.loop = true;
