@@ -31,7 +31,7 @@ document.addEventListener('keydown', function(e)
   }
 });
 
-unction hmm() 
+function hmm() 
 {
 	var song = document.createElement("AUDIO");
 	song.setAttribute("src","shhh.mp3");
