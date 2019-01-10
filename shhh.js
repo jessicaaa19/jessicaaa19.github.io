@@ -31,11 +31,16 @@ document.addEventListener('keydown', function(e)
   }
 });
 
-function hmm() 
+unction hmm() 
 {
-	var song = new Audio("shhh.mp3");
-	song.loop = true;
+	var song = document.createElement("AUDIO");
+	song.setAttribute("src","shhh.mp3");
+	song.setAttribute("id","konamSong");
 	document.body.appendChild(song);​
+	
+	var nSong = document.getElementById("konamSong");
+	nSong.loop = true;
+	nSong.play();
 
 	alert("vAZz = n00b.");
 }
