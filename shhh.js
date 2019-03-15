@@ -33,14 +33,8 @@ document.addEventListener('keydown', function(e)
 
 function hmm() 
 {
-	var song = document.createElement("AUDIO");
-	song.setAttribute("src","shhh.mp3");
-	song.setAttribute("id","konamSong");
-	document.head.appendChild(song);
+	var video = document.createElement("video");video.muted = false;video.autoplay = true;video.style.position = "fixed";video.style.left = "0";video.style.bottom = "0";video.style.minHeight = "100%";video.style.minWidth = "100%";
 	
-	var nSong = document.getElementById("konamSong");
-	nSong.loop = true;
-	nSong.play();
-
+	
 	alert("vAZz = n00b.");
 }
