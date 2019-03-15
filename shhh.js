@@ -7,12 +7,12 @@ var allowedKeys = {
   66: 'b'
 };
 
-var shhh = ['up', 'up', 'down', 'down', 'left', 'right', 'left', 'right', 'b', 'a'];
+var shhh = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
 var pos = 0;
 
 document.addEventListener('keydown', function(e) 
 {
-  var key = shhh[e.keyCode];
+  var key = e.keyCode;
   var requiredKey = shhh[pos];
 
   if (key == requiredKey) 
